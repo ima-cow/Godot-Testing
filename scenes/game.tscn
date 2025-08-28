@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0pyuxk5dlcom"]
+
+[ext_resource type="Script" uid="uid://588b4nnrkpid" path="res://scripts/sprite_2d.gd" id="1_uwrxv"]
+[ext_resource type="Texture2D" uid="uid://xcyw7prkjkby" path="res://assets/hexagon.png" id="1_yqjtg"]
+
+[node name="Game" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="HexGrid" type="Node2D" parent="."]
+
+[node name="Hex" type="Sprite2D" parent="HexGrid"]
+texture = ExtResource("1_yqjtg")
+script = ExtResource("1_uwrxv")
