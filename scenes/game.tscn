@@ -19,5 +19,3 @@ texture = ExtResource("1_yqjtg")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="HexGrid/Hex"]
 polygon = PackedVector2Array(54, -93, 107, 0, 54, 93, -54, 93, -107, 0, -54, -93)
-
-[connection signal="input_event" from="HexGrid/Hex" to="HexGrid" method="_on_hex_input_event"]
