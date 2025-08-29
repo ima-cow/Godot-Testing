@@ -21,11 +21,6 @@ position = Vector2(160, 96)
 texture = ExtResource("1_yqjtg")
 script = ExtResource("1_uwrxv")
 
-[node name="Hex2" type="Sprite2D" parent="HexGrid/Hex2"]
-position = Vector2(-160, -96)
-texture = ExtResource("1_yqjtg")
-script = ExtResource("1_uwrxv")
-
 [node name="Hex3" type="Sprite2D" parent="HexGrid"]
 position = Vector2(-160, 96)
 texture = ExtResource("1_yqjtg")
@@ -43,5 +38,74 @@ script = ExtResource("1_uwrxv")
 
 [node name="Hex6" type="Sprite2D" parent="HexGrid"]
 position = Vector2(-160, -96)
+texture = ExtResource("1_yqjtg")
+script = ExtResource("1_uwrxv")
+
+[node name="Hex7" type="Sprite2D" parent="HexGrid"]
+texture = ExtResource("1_yqjtg")
+script = ExtResource("1_uwrxv")
+
+[node name="Hex8" type="Sprite2D" parent="HexGrid"]
+position = Vector2(320, 192)
+texture = ExtResource("1_yqjtg")
+script = ExtResource("1_uwrxv")
+
+[node name="Hex9" type="Sprite2D" parent="HexGrid"]
+position = Vector2(320, -192)
+texture = ExtResource("1_yqjtg")
+script = ExtResource("1_uwrxv")
+
+[node name="Hex10" type="Sprite2D" parent="HexGrid"]
+position = Vector2(0, -384)
+texture = ExtResource("1_yqjtg")
+script = ExtResource("1_uwrxv")
+
+[node name="Hex11" type="Sprite2D" parent="HexGrid"]
+position = Vector2(160, 96)
+texture = ExtResource("1_yqjtg")
+script = ExtResource("1_uwrxv")
+
+[node name="Hex12" type="Sprite2D" parent="HexGrid"]
+position = Vector2(320, 0)
+texture = ExtResource("1_yqjtg")
+script = ExtResource("1_uwrxv")
+
+[node name="Hex13" type="Sprite2D" parent="HexGrid"]
+position = Vector2(-160, -288)
+texture = ExtResource("1_yqjtg")
+script = ExtResource("1_uwrxv")
+
+[node name="Hex14" type="Sprite2D" parent="HexGrid"]
+position = Vector2(160, 288)
+texture = ExtResource("1_yqjtg")
+script = ExtResource("1_uwrxv")
+
+[node name="Hex15" type="Sprite2D" parent="HexGrid"]
+position = Vector2(160, -288)
+texture = ExtResource("1_yqjtg")
+script = ExtResource("1_uwrxv")
+
+[node name="Hex16" type="Sprite2D" parent="HexGrid"]
+position = Vector2(-160, 288)
+texture = ExtResource("1_yqjtg")
+script = ExtResource("1_uwrxv")
+
+[node name="Hex17" type="Sprite2D" parent="HexGrid"]
+position = Vector2(0, 384)
+texture = ExtResource("1_yqjtg")
+script = ExtResource("1_uwrxv")
+
+[node name="Hex18" type="Sprite2D" parent="HexGrid"]
+position = Vector2(-320, 192)
+texture = ExtResource("1_yqjtg")
+script = ExtResource("1_uwrxv")
+
+[node name="Hex19" type="Sprite2D" parent="HexGrid"]
+position = Vector2(-320, -192)
+texture = ExtResource("1_yqjtg")
+script = ExtResource("1_uwrxv")
+
+[node name="Hex20" type="Sprite2D" parent="HexGrid"]
+position = Vector2(-320, 0)
 texture = ExtResource("1_yqjtg")
 script = ExtResource("1_uwrxv")
