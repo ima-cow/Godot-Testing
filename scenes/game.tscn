@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://b0pyuxk5dlcom"]
+[gd_scene load_steps=4 format=3 uid="uid://b0pyuxk5dlcom"]
 
-[ext_resource type="Script" uid="uid://588b4nnrkpid" path="res://scripts/sprite_2d.gd" id="1_uwrxv"]
+[ext_resource type="Script" uid="uid://c138lt85hei3v" path="res://scenes/hex_grid.gd" id="1_lnu2h"]
+[ext_resource type="Script" uid="uid://588b4nnrkpid" path="res://scripts/hex.gd" id="1_uwrxv"]
 [ext_resource type="Texture2D" uid="uid://xcyw7prkjkby" path="res://assets/hexagon.png" id="1_yqjtg"]
 
 [node name="Game" type="Node2D"]
@@ -8,7 +9,39 @@
 [node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="HexGrid" type="Node2D" parent="."]
+script = ExtResource("1_lnu2h")
 
 [node name="Hex" type="Sprite2D" parent="HexGrid"]
+position = Vector2(0, 192)
+texture = ExtResource("1_yqjtg")
+script = ExtResource("1_uwrxv")
+
+[node name="Hex2" type="Sprite2D" parent="HexGrid"]
+position = Vector2(160, 96)
+texture = ExtResource("1_yqjtg")
+script = ExtResource("1_uwrxv")
+
+[node name="Hex2" type="Sprite2D" parent="HexGrid/Hex2"]
+position = Vector2(-160, -96)
+texture = ExtResource("1_yqjtg")
+script = ExtResource("1_uwrxv")
+
+[node name="Hex3" type="Sprite2D" parent="HexGrid"]
+position = Vector2(-160, 96)
+texture = ExtResource("1_yqjtg")
+script = ExtResource("1_uwrxv")
+
+[node name="Hex4" type="Sprite2D" parent="HexGrid"]
+position = Vector2(160, -96)
+texture = ExtResource("1_yqjtg")
+script = ExtResource("1_uwrxv")
+
+[node name="Hex5" type="Sprite2D" parent="HexGrid"]
+position = Vector2(0, -192)
+texture = ExtResource("1_yqjtg")
+script = ExtResource("1_uwrxv")
+
+[node name="Hex6" type="Sprite2D" parent="HexGrid"]
+position = Vector2(-160, -96)
 texture = ExtResource("1_yqjtg")
 script = ExtResource("1_uwrxv")
