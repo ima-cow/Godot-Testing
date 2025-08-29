@@ -1,4 +1,1 @@
-extends Sprite2D
-
-
- 
+extends Area2D

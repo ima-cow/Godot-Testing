@@ -10,10 +10,14 @@ config_version=5
 
 [application]
 
-config/name="New Game Project"
+config/name="Puzzle KBG"
 run/main_scene="uid://b0pyuxk5dlcom"
 config/features=PackedStringArray("4.4")
 config/icon="res://icon.svg"
+
+[godots]
+
+version_hint=""
 
 [input]
 
