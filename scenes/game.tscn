@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://b0pyuxk5dlcom"]
 
 [ext_resource type="Script" uid="uid://c138lt85hei3v" path="res://scripts/hex_grid.gd" id="1_lnu2h"]
-[ext_resource type="Script" uid="uid://588b4nnrkpid" path="res://scripts/hex.gd" id="1_uwrxv"]
 [ext_resource type="Texture2D" uid="uid://xcyw7prkjkby" path="res://assets/hexagon.png" id="1_yqjtg"]
+[ext_resource type="Texture2D" uid="uid://bgexqpeya8w2x" path="res://assets/hexagon_red.png" id="2_lnu2h"]
 
 [node name="Game" type="Node2D"]
 
@@ -10,12 +10,66 @@
 
 [node name="HexGrid" type="Node2D" parent="."]
 script = ExtResource("1_lnu2h")
+redHex = ExtResource("2_lnu2h")
 
 [node name="Hex" type="Area2D" parent="HexGrid"]
-script = ExtResource("1_uwrxv")
 
 [node name="Sprite2D" type="Sprite2D" parent="HexGrid/Hex"]
 texture = ExtResource("1_yqjtg")
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="HexGrid/Hex"]
+polygon = PackedVector2Array(54, -93, 107, 0, 54, 93, -54, 93, -107, 0, -54, -93)
+
+[node name="Hex2" type="Area2D" parent="HexGrid"]
+position = Vector2(160, -96)
+
+[node name="Sprite2D" type="Sprite2D" parent="HexGrid/Hex2"]
+texture = ExtResource("1_yqjtg")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="HexGrid/Hex2"]
+polygon = PackedVector2Array(54, -93, 107, 0, 54, 93, -54, 93, -107, 0, -54, -93)
+
+[node name="Hex3" type="Area2D" parent="HexGrid"]
+position = Vector2(-160, 96)
+
+[node name="Sprite2D" type="Sprite2D" parent="HexGrid/Hex3"]
+texture = ExtResource("1_yqjtg")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="HexGrid/Hex3"]
+polygon = PackedVector2Array(54, -93, 107, 0, 54, 93, -54, 93, -107, 0, -54, -93)
+
+[node name="Hex4" type="Area2D" parent="HexGrid"]
+position = Vector2(0, 192)
+
+[node name="Sprite2D" type="Sprite2D" parent="HexGrid/Hex4"]
+texture = ExtResource("1_yqjtg")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="HexGrid/Hex4"]
+polygon = PackedVector2Array(54, -93, 107, 0, 54, 93, -54, 93, -107, 0, -54, -93)
+
+[node name="Hex5" type="Area2D" parent="HexGrid"]
+position = Vector2(160, 96)
+
+[node name="Sprite2D" type="Sprite2D" parent="HexGrid/Hex5"]
+texture = ExtResource("1_yqjtg")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="HexGrid/Hex5"]
+polygon = PackedVector2Array(54, -93, 107, 0, 54, 93, -54, 93, -107, 0, -54, -93)
+
+[node name="Hex6" type="Area2D" parent="HexGrid"]
+position = Vector2(-160, -96)
+
+[node name="Sprite2D" type="Sprite2D" parent="HexGrid/Hex6"]
+texture = ExtResource("1_yqjtg")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="HexGrid/Hex6"]
+polygon = PackedVector2Array(54, -93, 107, 0, 54, 93, -54, 93, -107, 0, -54, -93)
+
+[node name="Hex7" type="Area2D" parent="HexGrid"]
+position = Vector2(0, -192)
+
+[node name="Sprite2D" type="Sprite2D" parent="HexGrid/Hex7"]
+texture = ExtResource("1_yqjtg")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="HexGrid/Hex7"]
 polygon = PackedVector2Array(54, -93, 107, 0, 54, 93, -54, 93, -107, 0, -54, -93)
