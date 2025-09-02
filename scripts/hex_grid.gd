@@ -6,10 +6,9 @@ func _ready():
 	for hex in get_children():
 		hex.input_event.connect(_on_hex_input_event)
 
-func _on_hex_input_event(viewport, event, shape_idx):
+func _on_hex_input_event(_viewport, event, _shape_idx):
 	if event.is_action_pressed("click"):
 		print("click")
-		locate_nearest_hex().queue_free()
 	else:
 		print("hover")
 
@@ -19,3 +18,6 @@ func locate_nearest_hex():
 		if get_global_mouse_position().distance_squared_to(hex.global_position) < get_global_mouse_position().distance_squared_to(closest_hex.global_position):
 			closest_hex = hex
 	return closest_hex
+	
+#func generate_line():
+		
