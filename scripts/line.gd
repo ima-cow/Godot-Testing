@@ -8,4 +8,4 @@ func _ready():
 	generate_line()
 
 func generate_line():
-	start.global_position = Vector2(get_parent().locate_closest_hex().global_position)
+	start.global_position = get_parent().locate_closest_hex().global_position
