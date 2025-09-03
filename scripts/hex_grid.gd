@@ -11,10 +11,11 @@ func _ready():
 func _on_hex_input_event(_viewport, event, _shape_idx):
 	if event.is_action_pressed("click"):
 		print("click")
+		generate_line()
 	else:
 		print("hover")
 
-func locate_nearest_hex():
+func locate_closest_hex():
 	var closest_hex = get_child(0)
 	for hex in get_children():
 		if get_global_mouse_position().distance_squared_to(hex.global_position) < get_global_mouse_position().distance_squared_to(closest_hex.global_position):
@@ -23,4 +24,5 @@ func locate_nearest_hex():
 	
 func generate_line():
 	var new_line = line.instantiate()
+	add_child(new_line)
 	

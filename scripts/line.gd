@@ -8,4 +8,4 @@ func _ready():
 	generate_line()
 
 func generate_line():
-	start.global_position = Vector2()
+	start.global_position = Vector2($HexGrid.locate_closest_hex().global_position)
