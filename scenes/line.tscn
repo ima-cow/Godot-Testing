@@ -1,5 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://umsm1dxg8jiv"]
+[gd_scene load_steps=5 format=3 uid="uid://umsm1dxg8jiv"]
 
+[ext_resource type="Script" uid="uid://vh6odk2pr7s3" path="res://scenes/line.gd" id="1_ce3t5"]
 [ext_resource type="Texture2D" uid="uid://b83aodj8ox31" path="res://assets/red_line_point.png" id="1_pdjlr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ce3t5"]
@@ -9,6 +10,7 @@ size = Vector2(64, 64)
 size = Vector2(64, 64)
 
 [node name="Line" type="Node2D"]
+script = ExtResource("1_ce3t5")
 
 [node name="Start" type="Area2D" parent="."]
 
