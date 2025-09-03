@@ -4,7 +4,8 @@ extends Node2D
 
 func _ready():
 	for hex in get_children():
-		hex.input_event.connect(_on_hex_input_event)
+		if hex is Area2D:
+			hex.input_event.connect(_on_hex_input_event)
 
 func _on_hex_input_event(_viewport, event, _shape_idx):
 	if event.is_action_pressed("click"):
