@@ -1,6 +1,7 @@
 extends Node2D
 
 @export var redHex = Texture2D
+@onready var line = preload("res://scenes/line.tscn")
 
 func _ready():
 	for hex in get_children():
@@ -20,5 +21,6 @@ func locate_nearest_hex():
 			closest_hex = hex
 	return closest_hex
 	
-#func generate_line():
-		
+func generate_line():
+	var new_line = line.instantiate()
+	
