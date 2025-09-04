@@ -15,4 +15,4 @@ func _on_generate_list(line_being_genorated):
 		if !get_parent().locate_closest_hex().has_line && !get_parent().locate_closest_hex().end_point:
 			var line_segement = Sprite2D.new()
 			line_segement.set_texture(line_texture)
-			line_segement.
+			line_segement.set_global_position(get_parent().locate_closest_hex().get_global_position())
