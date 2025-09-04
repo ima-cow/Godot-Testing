@@ -1,8 +1,8 @@
 extends Node2D
 
-@export var redHex = Texture2D
 @onready var line = preload("res://scenes/line.tscn")
 signal generate_line(starting)
+var line_being_genorated = false
 
 func _ready():
 	for hex in get_children():
@@ -10,11 +10,11 @@ func _ready():
 			hex.input_event.connect(_on_hex_input_event)
 
 func _on_hex_input_event(_viewport, event, _shape_idx):
-	var starting = true
 	if event.is_action_pressed("click"):
-		add_child(line.instantiate())
-		generate_line.emit(starting)
-		starting = false
+		generate_line.emit(line_being_genorated)
+		if line_being_genorated == false:
+			add_child(line.instantiate())
+			line_being_genorated = true
 
 func locate_closest_hex():
 	var closest_hex = get_child(0)

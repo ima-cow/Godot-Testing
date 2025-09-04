@@ -1,7 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://b0pyuxk5dlcom"]
+[gd_scene load_steps=3 format=3 uid="uid://b0pyuxk5dlcom"]
 
 [ext_resource type="Script" uid="uid://c138lt85hei3v" path="res://scripts/hex_grid.gd" id="1_lnu2h"]
-[ext_resource type="Texture2D" uid="uid://bgexqpeya8w2x" path="res://assets/hexagon_red.png" id="2_lnu2h"]
 [ext_resource type="PackedScene" uid="uid://bs35j85dxpk34" path="res://scenes/hex.tscn" id="3_lbhrr"]
 
 [node name="Game" type="Node2D"]
@@ -10,7 +9,6 @@
 
 [node name="HexGrid" type="Node2D" parent="."]
 script = ExtResource("1_lnu2h")
-redHex = ExtResource("2_lnu2h")
 
 [node name="Hex" parent="HexGrid" instance=ExtResource("3_lbhrr")]
 
