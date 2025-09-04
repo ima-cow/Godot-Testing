@@ -5,7 +5,8 @@ extends Node2D
 
 func _ready():
 	end.get_child(1).visible = false
-	generate_line()
-
-func generate_line():
 	start.global_position = get_parent().locate_closest_hex().global_position
+	get_parent().generate_line.connect(_on_generate_list)
+
+func _on_generate_list(starting):
+	print(starting)
