@@ -3,7 +3,7 @@ extends Node2D
 @onready var line = preload("res://scenes/line.tscn")
 signal generate_line(starting)
 var line_being_genorated = false
-
+#FML I hate minorities
 func _ready():
 	for hex in get_children():
 		if hex is Area2D:
